@@ -20,7 +20,24 @@ function Header() {
       {headerClass === styles.header__mob ? (
         <div></div>
       ) : (
-        <h1 className={styles.header__logo}>{"<D>"}</h1>
+        <motion.h1
+          animate={{
+            x: 0,
+            opacity: 1,
+            transition: {
+              duration: 0.5,
+              type: "tween",
+              delay: 0.2,
+            },
+          }}
+          initial={{
+            opacity: 0,
+            x: -100,
+          }}
+          className={styles.header__logo}
+        >
+          {"<D>"}
+        </motion.h1>
       )}
 
       <div
