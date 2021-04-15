@@ -1,0 +1,127 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 12vh;
+  margin-top: 1em;
+}
+
+h1.header__logo {
+  color: white;
+  font-size: 3.5rem;
+  margin-left: 1em;
+  font-family: "Pacifico", cursive;
+}
+
+.header__links > a {
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em 2.5em;
+  margin: 0 0.5em;
+  transition: 0.5s;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.header__links :hover {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+#selectedLink {
+  background-color: white;
+  color: black;
+}
+
+.header__mobile__links {
+  display: none;
+}
+
+@media only screen and (max-width: 520px) {
+  h1.header__logo {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .header__mob {
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header__mobile__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+  }
+
+  .header__mobile__links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+  }
+
+  .menuLinks > ul {
+    list-style-type: none;
+  }
+
+  .menuLinks li {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2em 0px;
+    transition: 0.3s;
+  }
+
+  .menuLinks > ul > li :hover {
+    color: black;
+    background-color: white;
+  }
+
+  .header__logo__center > img {
+    align-self: flex-end;
+    margin-right: 5em;
+  }
+
+  .header__logo__mob {
+    display: none;
+  }
+
+  .header__mobile__links > img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .header__links {
+    display: none;
+  }
+
+  #selectedLink {
+    background-color: white;
+    color: black;
+    margin: 0em 2em;
+    border-radius: 10px;
+  }
+
+  .menuLinks a {
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 2.5em;
+    margin: 0 0.5em;
+    transition: 0.5s;
+    background-color: black;
+    border-radius: 10px;
+  }
+}

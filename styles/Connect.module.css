@@ -1,0 +1,88 @@
+.connect {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.connect > h1 {
+  color: white;
+  align-self: center;
+}
+
+.connect__seperator {
+  width: 30%;
+  align-self: center;
+  border-top: 1px solid white;
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+
+#name {
+  color: white;
+  padding-bottom: 0.7em;
+}
+#profession {
+  color: #a8a196;
+  padding-bottom: 0.5em;
+}
+
+#residency {
+  font-size: small;
+  margin-top: 2em;
+  color: #a8a196;
+}
+
+.connectDetails__1,
+.connectDetails__2 {
+  margin-bottom: 5em;
+  margin-left: 5em;
+}
+
+#connectText {
+  color: #a8a196;
+  width: 30%;
+  margin-bottom: 1em;
+}
+
+#email,
+#mobile {
+  color: white;
+  font-weight: bold;
+}
+
+.connect__social {
+  margin-bottom: 5em;
+  display: flex;
+  margin-left: 5em;
+}
+
+.connect__social > a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+}
+
+.connect__social > p {
+  margin: 0px 2em;
+  color: #a8a196;
+  font-size: smaller;
+}
+
+@media only screen and (max-width: 520px) {
+  #connectText {
+    width: 90%;
+  }
+
+  .connectDetails__1,
+  .connectDetails__2 {
+    margin-left: 3em;
+  }
+
+  .connect__social > p {
+    margin: 0px 1em;
+  }
+  .connect__social {
+    margin-left: 3em;
+  }
+}
