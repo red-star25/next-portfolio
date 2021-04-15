@@ -50,6 +50,8 @@ h1.header__logo {
 
 @media only screen and (max-width: 880px) {
   .header__mob {
+    margin-left: -1em;
+    margin-top: -1em;
     height: 100vh;
     flex-direction: column;
     display: flex;
