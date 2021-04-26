@@ -4,10 +4,14 @@ import Home from "../component/Home/Home";
 import Project from "../component/Project/Project";
 import Skills from "../component/Skills/Skills";
 import Connect from "../component/Connect/Connect";
+import Head from "next/head";
 
 export default function App() {
   return (
     <div className={styles.app}>
+      <Head>
+        <title>Dhruv Nakum</title>
+      </Head>
       {/* Header */}
       <div className={styles.app__header}>
         <Header />

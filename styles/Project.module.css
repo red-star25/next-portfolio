@@ -68,17 +68,10 @@
 .projectCard__title > h2 {
   color: white;
   width: 250px;
-  height: 0.2em;
 }
 
 .projectCard__subTitle {
   color: #a8a196;
   width: 250px;
-}
-
-@media only screen and (max-width: 520px) {
-  /* .projectCard {
-    height: 180px;
-    width: 280px;
-  } */
+  margin-top: -1em;
 }
