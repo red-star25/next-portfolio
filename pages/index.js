@@ -9,9 +9,6 @@ import Head from "next/head";
 export default function App() {
   return (
     <div className={styles.app}>
-      <Head>
-        <title>Dhruv Nakum</title>
-      </Head>
       {/* Header */}
       <div className={styles.app__header}>
         <Header />
