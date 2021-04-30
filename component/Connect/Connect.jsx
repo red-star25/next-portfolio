@@ -22,7 +22,6 @@ function Connect() {
             project, get in touch with me at
           </p>
           <p id={styles.email}>nakumdhruv123@gmail.com</p>
-          <p id={styles.mobile}>(+91) 6353-3693-54</p>
         </div>
         <div className={styles.connect__social}>
           <a
