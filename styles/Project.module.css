@@ -63,6 +63,7 @@
   margin-bottom: 1em;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .projectCard__title > h2 {

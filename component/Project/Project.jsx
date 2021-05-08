@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import styles from "../../styles/Project.module.css";
 import Image from "next/image";
+import { useRouter } from "next/router";
 // import netflix from "/images/netflix_clone.png";
 // import google from "/images/google_clone.png";
 // import spotify from "/images/spotify_clone.png";
@@ -23,56 +24,73 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 function Project() {
+  const router = useRouter();
   const webProjects = [
     {
       title: "COVID Fighter",
       subtitle: "Get Help / Help Other to Fight with COVID",
       image: "/images/covidFighter.png",
+      source: "http://covid-fighter.vercel.app/",
     },
     {
       title: "GhostDB",
       subtitle: "A Video games discovery website",
       image: "/images/ghost.png",
+      source: "https://ghostdb.vercel.app/",
     },
     {
       title: "Netflix",
       subtitle: "With video functionality and authentication",
       image: "/images/netflix_clone.png",
+      source: "https://github.com/red-star25/netflix-clone",
     },
     {
       title: "Google",
       subtitle: "Using Google Search API",
       image: "/images/google_clone.png",
+      source: "https://github.com/red-star25/google-clone",
     },
     {
       title: "Spotify",
       subtitle: "Using Spotify Authentication and Media Player",
       image: "/images/spotify_clone.png",
+      source: "https://github.com/red-star25/spotify-clone",
+    },
+    {
+      title: "LinkedIn Clone",
+      subtitle: "LinkedIn clone with LinkedIn Authentication",
+      image: "/images/linkedInClone.png",
+      source: "https://github.com/red-star25/LinkedIn-Clone",
     },
     {
       title: "AI News Reader",
       subtitle: "Using Alan AI service",
       image: "/images/ai_reader.png",
+      source: "https://github.com/red-star25/alan-ai",
     },
     {
       title: "Budget Tracker",
       subtitle: "A budget tracker for daily use",
       image: "/images/budget_tracker.png",
+      source: "https://zealous-mclean-9f05f5.netlify.app/",
     },
     {
       title: "Forkify",
       subtitle: "An Online Recipe Search Web Application using JavaScript ",
       image: "/images/forkify.png",
+      source: null,
     },
     {
       title: "Pig Game",
       subtitle: "High score dice rolling game for two player",
       image: "/images/pig_game.png",
+      source: "https://github.com/red-star25/pigGame",
     },
     {
       title: "Google Keeps Note",
       subtitle: "Daily notes taking web application",
       image: "/images/todo.png",
+      source: "https://github.com/red-star25/todo-js",
     },
   ];
   const appProjects = [
@@ -134,6 +152,9 @@ function Project() {
                 key={index}
                 data-aos="zoom-in-up"
                 className={styles.projectCard__main}
+                onClick={() => {
+                  if (project.source != null) router.push(project.source);
+                }}
               >
                 <div className={styles.projectCard}>
                   <Image
@@ -161,7 +182,11 @@ function Project() {
         <div className={styles.project__listOfProject}>
           {appProjects.map((project) => {
             return (
-              <div data-aos="zoom-in-up" className={styles.projectCard__main}>
+              <div
+                data-aos="zoom-in-up"
+                style={{ cursor: "default" }}
+                className={styles.projectCard__main}
+              >
                 <div className={styles.projectCard}>
                   <Image
                     width={240}
