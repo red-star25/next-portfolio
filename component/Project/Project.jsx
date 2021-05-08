@@ -25,6 +25,11 @@ import "aos/dist/aos.css";
 function Project() {
   const webProjects = [
     {
+      title: "COVID Fighter",
+      subtitle: "Get Help / Help Other to Fight with COVID",
+      image: "/images/covidFighter.png",
+    },
+    {
       title: "GhostDB",
       subtitle: "A Video games discovery website",
       image: "/images/ghost.png",
