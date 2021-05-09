@@ -28,7 +28,7 @@ function Project() {
   const webProjects = [
     {
       title: "COVID Fighter",
-      subtitle: "Get Help / Help Other to Fight with COVID",
+      subtitle: "Get Help / Help Other to Fight against COVID",
       image: "/images/covidFighter.png",
       source: "http://covid-fighter.vercel.app/",
     },
