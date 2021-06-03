@@ -2,23 +2,6 @@ import { useEffect } from "react";
 import styles from "../../styles/Project.module.css";
 import Image from "next/image";
 import { useRouter } from "next/router";
-// import netflix from "/images/netflix_clone.png";
-// import google from "/images/google_clone.png";
-// import spotify from "/images/spotify_clone.png";
-// import aiReader from "/images/ai_reader.png";
-// import budgetTracker from "/images/budget_tracker.png";
-// import forkify from "/images/forkify.png";
-// import pigGame from "/images/pig_game.png";
-// import todo from "/images/todo.png";
-
-// import workout from "/images/Workout.png";
-// import inbrief from "/images/inbrief.png";
-// import waller from "/images/waller.png";
-// import wyck from "/images/weather.png";
-// import whatsapp from "/images/whatsapp_mob.png";
-// import messanger from "/images/messanger_app.png";
-// import covidTracker from "/images/covid_tracker_mob.png";
-// import mediaPlayer from "/images/media_player_mob.png";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -78,7 +61,6 @@ function Project() {
       title: "Forkify",
       subtitle: "An Online Recipe Search Web Application using JavaScript ",
       image: "/images/forkify.png",
-      source: null,
     },
     {
       title: "Pig Game",
@@ -98,21 +80,29 @@ function Project() {
       title: "WorkoutGo",
       subtitle: "A Workout App",
       image: "/images/Workout.png",
+      source:
+        "https://play.google.com/store/apps/details?id=com.nakumsdtech.workout",
     },
     {
       title: "Inbrief",
       subtitle: "A short news app. Read news in seconds",
       image: "/images/inbrief.png",
+      source:
+        "https://play.google.com/store/apps/details?id=com.NakumsDtech.inbreif",
     },
     {
       title: "Waller",
       subtitle: "A Wallpaper app. Save & Set wallpapers in one click",
       image: "/images/waller.png",
+      source:
+        "https://play.google.com/store/apps/details?id=com.NakumsDtech.waller",
     },
     {
       title: "Wyck",
       subtitle: "A Weahter forcast app using 'openweatherapi'",
       image: "/images/weather.png",
+      source:
+        "https://play.google.com/store/apps/details?id=com.NakumsDtech.wyck",
     },
     {
       title: "Whatsapp",
@@ -151,6 +141,7 @@ function Project() {
               <div
                 key={index}
                 data-aos="zoom-in-up"
+                style={{ cursor: project.source ? "pointer" : "default" }}
                 className={styles.projectCard__main}
                 onClick={() => {
                   if (project.source != null) router.push(project.source);
@@ -184,8 +175,11 @@ function Project() {
             return (
               <div
                 data-aos="zoom-in-up"
-                style={{ cursor: "default" }}
+                style={{ cursor: project.source ? "pointer" : "default" }}
                 className={styles.projectCard__main}
+                onClick={() => {
+                  if (project.source != null) router.push(project.source);
+                }}
               >
                 <div className={styles.projectCard}>
                   <Image
