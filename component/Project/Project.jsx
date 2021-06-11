@@ -77,6 +77,11 @@ function Project() {
   ];
   const appProjects = [
     {
+      "title":"RedCloud",
+      "subtitle":"A Cloud Storage Application",
+      image:"/images/redcloud.png",
+    },
+    {
       title: "WorkoutGo",
       subtitle: "A Workout App",
       image: "/images/Workout.png",
