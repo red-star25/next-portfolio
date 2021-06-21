@@ -21,11 +21,12 @@ function Project() {
       image: "/images/ghost.png",
       source: "https://ghostdb.vercel.app/",
     },
+
     {
-      title: "Netflix",
-      subtitle: "With video functionality and authentication",
-      image: "/images/netflix_clone.png",
-      source: "https://github.com/red-star25/netflix-clone",
+      title: "AI News Reader",
+      subtitle: "Using Alan AI service",
+      image: "/images/ai_reader.png",
+      source: "https://github.com/red-star25/alan-ai",
     },
     {
       title: "Google",
@@ -35,22 +36,23 @@ function Project() {
     },
     {
       title: "Spotify",
-      subtitle: "Using Spotify Authentication and Media Player",
+      subtitle: "Spotify Clone with its Auth API and Media Player",
       image: "/images/spotify_clone.png",
       source: "https://github.com/red-star25/spotify-clone",
     },
     {
       title: "LinkedIn Clone",
-      subtitle: "LinkedIn clone with LinkedIn Authentication",
+      subtitle: "LinkedIn Clone with its Auth API",
       image: "/images/linkedInClone.png",
       source: "https://github.com/red-star25/LinkedIn-Clone",
     },
     {
-      title: "AI News Reader",
-      subtitle: "Using Alan AI service",
-      image: "/images/ai_reader.png",
-      source: "https://github.com/red-star25/alan-ai",
+      title: "Netflix",
+      subtitle: "Netflix Clone",
+      image: "/images/netflix_clone.png",
+      source: "https://github.com/red-star25/netflix-clone",
     },
+
     {
       title: "Budget Tracker",
       subtitle: "A budget tracker for daily use",
@@ -77,9 +79,9 @@ function Project() {
   ];
   const appProjects = [
     {
-      "title":"RedCloud",
-      "subtitle":"A Cloud Storage Application",
-      image:"/images/redcloud.png",
+      title: "RedCloud",
+      subtitle: "A Cloud Storage Application",
+      image: "/images/redcloud.png",
     },
     {
       title: "WorkoutGo",
@@ -123,11 +125,6 @@ function Project() {
       title: "Covid Tracker",
       subtitle: "App to track Covid-19 cases from all over the world",
       image: "/images/covid_tracker_mob.png",
-    },
-    {
-      title: "Media Player Neumorphic Design",
-      subtitle: "An Neumorphic design of Media Player ",
-      image: "/images/media_player_mob.png",
     },
   ];
 
