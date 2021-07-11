@@ -79,6 +79,13 @@ function Project() {
   ];
   const appProjects = [
     {
+      title: "NRMed",
+      subtitle: "An E-Commerce Medicine Application",
+      image: "/images/NRMed.png",
+      source:
+        "https://www.linkedin.com/posts/dhruv-nakum-4b1054176_flutter-flutterdev-flutterappdevelopment-activity-6819283560608886784-152l",
+    },
+    {
       title: "RedCloud",
       subtitle: "A Cloud Storage Application",
       image: "/images/redcloud.png",
@@ -120,11 +127,6 @@ function Project() {
       title: "Messanger",
       subtitle: "An UI clone of Facebook messanger mobile application",
       image: "/images/messanger_app.png",
-    },
-    {
-      title: "Covid Tracker",
-      subtitle: "App to track Covid-19 cases from all over the world",
-      image: "/images/covid_tracker_mob.png",
     },
   ];
 
