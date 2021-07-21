@@ -10,6 +10,12 @@ function Project() {
   const router = useRouter();
   const webProjects = [
     {
+      title: "Streamedia",
+      subtitle: "Socialmedia for movies/series fans",
+      image: "/images/Home.png",
+      source: "https://streamedia.in/",
+    },
+    {
       title: "COVID Fighter",
       subtitle: "Get Help / Help Other to Fight against COVID",
       image: "/images/covidFighter.png",
