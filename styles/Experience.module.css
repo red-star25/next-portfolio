@@ -1,0 +1,57 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+  margin-bottom: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  color: white;
+  list-style: none;
+}
+
+.experience > h1 {
+  color: white;
+}
+
+.experience__seperator {
+  width: 30%;
+  border-top: 1px solid white;
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+
+.experience__data {
+  display: flex;
+}
+
+.experience__data > ul {
+  list-style: none;
+}
+
+.company__position {
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 0.5em;
+  color: antiquewhite;
+}
+
+.company__duration {
+  color: gainsboro;
+  font-size: smaller;
+  margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 520px) {
+  .experience__data {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .experience__data {
+    flex-direction: column;
+  }
+}

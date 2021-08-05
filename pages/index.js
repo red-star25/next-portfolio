@@ -4,6 +4,7 @@ import Home from "../component/Home/Home";
 import Project from "../component/Project/Project";
 import Skills from "../component/Skills/Skills";
 import Connect from "../component/Connect/Connect";
+import Experience from "../component/Experience/Experience";
 import Head from "next/head";
 
 export default function App() {
@@ -26,8 +27,12 @@ export default function App() {
         <Project />
       </div>
       {/* Skills */}
-      <div id="skills" className={styles.app__skills}>
+      <div id="skills">
         <Skills />
+      </div>
+      {/* Experience */}
+      <div id="experience" className={styles.app__skills}>
+        <Experience />
       </div>
       {/* Connect */}
       <div id="connect" className={styles.app__skills}>

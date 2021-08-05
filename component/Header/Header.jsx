@@ -1,8 +1,8 @@
 import styles from "../../styles/Header.module.css";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-function Header() {
+function Header({ isVisible }) {
   const [selectedLink, setSelectedLink] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [headerClass, setHeaderClass] = useState(styles.header);
@@ -107,6 +107,15 @@ function Header() {
               </li>
               <li>
                 <a
+                  onClick={() => onLinkClicked("experience")}
+                  id={selectedLink === "experience" ? styles.selectedLink : ""}
+                  href="#experience"
+                >
+                  EXPERIENCE
+                </a>
+              </li>
+              <li>
+                <a
                   onClick={() => onLinkClicked("connect")}
                   id={selectedLink === "connect" ? styles.selectedLink : ""}
                   href="#connect"
@@ -176,6 +185,24 @@ function Header() {
           href="#skills"
         >
           SKILLS
+        </motion.a>
+        <motion.a
+          animate={{
+            opacity: 1,
+            transition: {
+              duration: 0.5,
+              type: "tween",
+              delay: 0.2,
+            },
+          }}
+          initial={{
+            opacity: 0,
+          }}
+          onClick={() => onLinkClicked("experience")}
+          id={selectedLink === "experience" ? styles.selectedLink : ""}
+          href="#experience"
+        >
+          EXPERIENCE
         </motion.a>
         <motion.a
           animate={{
