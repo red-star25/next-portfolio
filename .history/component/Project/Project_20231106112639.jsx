@@ -85,28 +85,6 @@ function Project() {
   ];
   const appProjects = [
     {
-      title: "MatchMde",
-      subtitle: "An AI Dating App",
-      image: "/images/matchmde.png",
-      source:"https://play.google.com/store/apps/details?id=com.matchmde",
-    },
-    {
-      title: "TownTips",
-      subtitle: "Local Search Engine for both customers and businesses",
-      image: "/images/towntips.png",
-      source:"https://play.google.com/store/apps/details?id=com.aecordigitalltd.towntips&hl=en&gl=US"
-    },
-    {
-      title: "Brightstar",
-      subtitle: "An Event and Service management application",
-      image: "/images/brightstar.png",
-    },
-    {
-      title: "DomTm",
-      subtitle: "An online restaurant directory and ordering application",
-      image: "/images/domtm.png",
-    },
-    {
       title: "NRMed",
       subtitle: "An E-Commerce Medicine Application",
       image: "/images/NRMed.png",

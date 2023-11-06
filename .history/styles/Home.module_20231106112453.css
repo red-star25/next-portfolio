@@ -9,6 +9,7 @@
 .home__title > h1 {
   color: white;
   font-size: 4em;
+  margin-top: 2em;
 }
 
 .home__subtitle > p {
@@ -87,6 +88,10 @@
     margin-top: -3em;
   }
 
+  .home__title{
+    margin-top: -2em;
+  }
+
   .home__left {
     width: 100%;
   }
@@ -99,6 +104,10 @@
 @media only screen and (max-width: 880px) {
   .home__left {
     width: 100%;
+  }
+
+  .home__title{
+    margin-top: -2em;
   }
 
   .home__right {

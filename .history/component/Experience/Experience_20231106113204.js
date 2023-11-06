@@ -21,11 +21,12 @@ function Experience() {
           - Design, build and maintain high-performance, reusable reliable Dart
 code including UI and core functionality.
           </li>
-          <li className={styles.company__duration}>Feb 2022 - Aug 2023</li>
+          <li>- Built over 80+ custom pages</li>
+          <li className={styles.company__duration}>July 2020 - Jan 2021</li>
         </ul>
         <ul data-aos="zoom-in" className={styles.company__info}>
           <h2 className={styles.company__name}>Aecor Technology PVT. LTD</h2>
-          <li className={styles.company__position}>Flutter Developer</li>
+          <li className={styles.company__position}>Lead Developer</li>
           <li>
             - Followed Agile standard practice across application development.
           </li>

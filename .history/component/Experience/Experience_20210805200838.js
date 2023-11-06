@@ -1,7 +1,7 @@
-import Aos from "aos";
-import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 import styles from "../../styles/Experience.module.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function Experience() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -11,21 +11,9 @@ function Experience() {
       <h1 data-aos="zoom-in">Experience</h1>
       <div data-aos="zoom-in" className={styles.experience__seperator}></div>
       <div className={styles.experience__data}>
-      <ul data-aos="zoom-in" className={styles.company__info}>
-          <h2 className={styles.company__name}>Trootech Business Solutions</h2>
-          <li className={styles.company__position}>Flutter Developer</li>
-          <li>
-          - Design, develop, and improve/maintain in-house applications.
-          </li>
-          <li>
-          - Design, build and maintain high-performance, reusable reliable Dart
-code including UI and core functionality.
-          </li>
-          <li className={styles.company__duration}>Feb 2022 - Aug 2023</li>
-        </ul>
         <ul data-aos="zoom-in" className={styles.company__info}>
           <h2 className={styles.company__name}>Aecor Technology PVT. LTD</h2>
-          <li className={styles.company__position}>Flutter Developer</li>
+          <li className={styles.company__position}>Lead Developer</li>
           <li>
             - Followed Agile standard practice across application development.
           </li>

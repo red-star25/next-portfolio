@@ -44,7 +44,7 @@ function Home() {
           <p>See the projects below, or check out some</p>
         </div>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         className={styles.home__right}
         animate={{
           opacity: 1,
@@ -58,7 +58,7 @@ function Home() {
         }}
       >
         <img src="/images/b&w.png" alt="" />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }

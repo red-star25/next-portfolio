@@ -9,6 +9,7 @@
 .home__title > h1 {
   color: white;
   font-size: 4em;
+  margin-top: 2em;
 }
 
 .home__subtitle > p {
@@ -85,6 +86,10 @@
   .home {
     margin-left: 3em;
     margin-top: -3em;
+  }
+
+  .home__title{
+    margin-top: -2em;
   }
 
   .home__left {

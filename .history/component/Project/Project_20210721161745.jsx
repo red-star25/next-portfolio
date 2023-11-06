@@ -1,7 +1,7 @@
-import Image from "next/image";
-import { useRouter } from "next/router";
 import { useEffect } from "react";
 import styles from "../../styles/Project.module.css";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -85,28 +85,6 @@ function Project() {
   ];
   const appProjects = [
     {
-      title: "MatchMde",
-      subtitle: "An AI Dating App",
-      image: "/images/matchmde.png",
-      source:"https://play.google.com/store/apps/details?id=com.matchmde",
-    },
-    {
-      title: "TownTips",
-      subtitle: "Local Search Engine for both customers and businesses",
-      image: "/images/towntips.png",
-      source:"https://play.google.com/store/apps/details?id=com.aecordigitalltd.towntips&hl=en&gl=US"
-    },
-    {
-      title: "Brightstar",
-      subtitle: "An Event and Service management application",
-      image: "/images/brightstar.png",
-    },
-    {
-      title: "DomTm",
-      subtitle: "An online restaurant directory and ordering application",
-      image: "/images/domtm.png",
-    },
-    {
       title: "NRMed",
       subtitle: "An E-Commerce Medicine Application",
       image: "/images/NRMed.png",
@@ -165,40 +143,6 @@ function Project() {
     <div className={styles.project}>
       <h1 data-aos="zoom-in">Projects</h1>
       <div data-aos="zoom-in" className={styles.project__seperator}></div>
-    
-      <div className={styles.project__mobile}>
-        <h2>Application Development Projects</h2>
-        <div className={styles.project__listOfProject}>
-          {appProjects.map((project) => {
-            return (
-              <div
-                data-aos="zoom-in-up"
-                style={{ cursor: project.source ? "pointer" : "default" }}
-                className={styles.projectCard__main}
-                onClick={() => {
-                  if (project.source != null) router.push(project.source);
-                }}
-              >
-                <div className={styles.projectCard}>
-                  <Image
-                    width={240}
-                    height={140}
-                    objectFit="cover"
-                    src={project.image}
-                    alt=""
-                  />
-                </div>
-                <div className={styles.projectCard__title}>
-                  <h2>{project.title}</h2>
-                </div>
-                <div className={styles.projectCard__subTitle}>
-                  <p>{project.subtitle}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
       <div className={styles.project__web}>
         <h2>Website Development Projects</h2>
         <div className={styles.project__listOfProject}>
@@ -218,6 +162,39 @@ function Project() {
                     width={240}
                     height={140}
                     layout="responsive"
+                    objectFit="cover"
+                    src={project.image}
+                    alt=""
+                  />
+                </div>
+                <div className={styles.projectCard__title}>
+                  <h2>{project.title}</h2>
+                </div>
+                <div className={styles.projectCard__subTitle}>
+                  <p>{project.subtitle}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className={styles.project__mobile}>
+        <h2>Application Development Projects</h2>
+        <div className={styles.project__listOfProject}>
+          {appProjects.map((project) => {
+            return (
+              <div
+                data-aos="zoom-in-up"
+                style={{ cursor: project.source ? "pointer" : "default" }}
+                className={styles.projectCard__main}
+                onClick={() => {
+                  if (project.source != null) router.push(project.source);
+                }}
+              >
+                <div className={styles.projectCard}>
+                  <Image
+                    width={240}
+                    height={140}
                     objectFit="cover"
                     src={project.image}
                     alt=""

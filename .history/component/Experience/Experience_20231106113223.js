@@ -25,7 +25,7 @@ code including UI and core functionality.
         </ul>
         <ul data-aos="zoom-in" className={styles.company__info}>
           <h2 className={styles.company__name}>Aecor Technology PVT. LTD</h2>
-          <li className={styles.company__position}>Flutter Developer</li>
+          <li className={styles.company__position}>Lead Developer</li>
           <li>
             - Followed Agile standard practice across application development.
           </li>

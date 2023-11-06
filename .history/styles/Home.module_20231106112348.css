@@ -9,6 +9,7 @@
 .home__title > h1 {
   color: white;
   font-size: 4em;
+  margin-top: 1em;
 }
 
 .home__subtitle > p {
